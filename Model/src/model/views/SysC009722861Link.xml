@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SysC009722861Link"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  EntityAssociation="model.assoc.OrderDeliveryAgentAssoc">
+  <ViewLinkDefEnd
+    Name="DeliveryAgentVO"
+    Cardinality="1"
+    Source="true"
+    Owner="model.views.DeliveryAgentVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="DeliveryAgentVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.DeliveryAgentVO.AgentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="OrdersVO"
+    Cardinality="-1"
+    Owner="model.views.OrdersVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="OrdersVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.OrdersVO.DeliveryAgentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>
