@@ -4,7 +4,7 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator id="UsersVOIterator" Binds="UsersVO" DataControl="AppModuleDataControl" RangeSize="25"/>
+    <iterator id="G3UsersVOIterator" Binds="UsersVO" DataControl="AppModuleDataControl" RangeSize="25"/>
   </executables>
   <bindings>
     <table IterBinding="variables" id="variables1">

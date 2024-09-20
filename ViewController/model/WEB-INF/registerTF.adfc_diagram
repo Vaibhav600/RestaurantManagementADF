@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View5">
+      <property
+         name="activityId">register</property>
+      <property
+         name="x">55.5</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>register&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">72.36719</property>
+      <property
+         name="page">/register.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <TaskFlowCall
+      id="TaskFlowCall6">
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>loginTF&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">loginTF</property>
+      <property
+         name="x">55.5</property>
+      <property
+         name="y">174.23438</property>
+      <property
+         name="documentReference">/WEB-INF/loginTF.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">loginTF</property>
+   </TaskFlowCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View5"
+      to="TaskFlowCall6">
+      <property
+         name="tosrcid">__2</property>
+      <property
+         name="fromOutcome">goToLogin</property>
+      <property
+         name="fromsrcid">__1</property>
+      <property
+         name="sdm:polyPoints">R50,96.5,72.30078,96.5,174.23438,R50</property>
+   </ControlFlowCase>
+</SDM>

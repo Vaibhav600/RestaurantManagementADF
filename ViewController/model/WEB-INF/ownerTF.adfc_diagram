@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">addCoupon</property>
+      <property
+         name="x">60.273438</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>addCoupon&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">72.30078</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">owner_dashboard</property>
+      <property
+         name="x">80.06641</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>owner_dashboard&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">174.36719</property>
+      <property
+         name="page">/ownerDashboard.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View3"
+      to="View2">
+      <property
+         name="tosrcid">__2</property>
+      <property
+         name="fromOutcome">goToAddCoupon</property>
+      <property
+         name="fromsrcid">__1</property>
+      <property
+         name="sdm:polyPoints">R50,121.06641,174.30078,101.27344,72.30078,R50</property>
+   </ControlFlowCase>
+</SDM>
