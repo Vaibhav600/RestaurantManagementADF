@@ -15,7 +15,14 @@
     ViewObjectName="model.views.MenuItemsVO"/>
   <ViewUsage
     Name="OrdersVO"
-    ViewObjectName="model.views.OrdersVO"/>
+    ViewObjectName="model.views.OrdersVO">
+    <ViewCriteriaUsage
+      Name="getOrderByIdVC"
+      FullName="model.views.OrdersVO.getOrderByIdVC"/>
+    <ViewCriteriaUsage
+      Name="searchOrderByRestaurantIdVC"
+      FullName="model.views.OrdersVO.searchOrderByRestaurantIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="RestaurantRatingVO"
     ViewObjectName="model.views.RestaurantRatingVO"/>
@@ -24,13 +31,25 @@
     ViewObjectName="model.views.RestaurantReviewVO"/>
   <ViewUsage
     Name="RestaurantsVO"
-    ViewObjectName="model.views.RestaurantsVO"/>
+    ViewObjectName="model.views.RestaurantsVO">
+    <ViewCriteriaUsage
+      Name="searchRestByIdVC"
+      FullName="model.views.RestaurantsVO.searchRestByIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="UsersVO"
-    ViewObjectName="model.views.UsersVO"/>
+    ViewObjectName="model.views.UsersVO">
+    <ViewCriteriaUsage
+      Name="searchUserByIdVC"
+      FullName="model.views.UsersVO.searchUserByIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="RestaurantForUser"
-    ViewObjectName="model.views.RestaurantsVO"/>
+    ViewObjectName="model.views.RestaurantsVO">
+    <ViewCriteriaUsage
+      Name="searchRestByIdVC"
+      FullName="model.views.RestaurantsVO.searchRestByIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="CouponsForRestaurantForUser"
     ViewObjectName="model.views.CouponsVO"/>
@@ -42,22 +61,44 @@
     ViewObjectName="model.views.MenuItemsVO"/>
   <ViewUsage
     Name="OrderForRestaurantForUser"
-    ViewObjectName="model.views.OrdersVO"/>
+    ViewObjectName="model.views.OrdersVO">
+    <ViewCriteriaUsage
+      Name="getOrderByIdVC"
+      FullName="model.views.OrdersVO.getOrderByIdVC"/>
+    <ViewCriteriaUsage
+      Name="searchOrderByRestaurantIdVC"
+      FullName="model.views.OrdersVO.searchOrderByRestaurantIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="RatingsForRestaurantForUser"
     ViewObjectName="model.views.RestaurantRatingVO"/>
   <ViewUsage
     Name="ReservationForRestaurantForUser"
-    ViewObjectName="model.views.ReservationsVO"/>
+    ViewObjectName="model.views.ReservationsVO">
+    <ViewCriteriaUsage
+      Name="searchReservatinByRestIdVC"
+      FullName="model.views.ReservationsVO.searchReservatinByRestIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="ReviewForRestaurantForUser"
     ViewObjectName="model.views.RestaurantReviewVO"/>
   <ViewUsage
     Name="OrderForRestaurant"
-    ViewObjectName="model.views.OrdersVO"/>
+    ViewObjectName="model.views.OrdersVO">
+    <ViewCriteriaUsage
+      Name="getOrderByIdVC"
+      FullName="model.views.OrdersVO.getOrderByIdVC"/>
+    <ViewCriteriaUsage
+      Name="searchOrderByRestaurantIdVC"
+      FullName="model.views.OrdersVO.searchOrderByRestaurantIdVC"/>
+  </ViewUsage>
   <ViewUsage
     Name="ReservationsForRestaurant"
-    ViewObjectName="model.views.ReservationsVO"/>
+    ViewObjectName="model.views.ReservationsVO">
+    <ViewCriteriaUsage
+      Name="searchReservatinByRestIdVC"
+      FullName="model.views.ReservationsVO.searchReservatinByRestIdVC"/>
+  </ViewUsage>
   <ViewLinkUsage
     Name="RestaurantForUserFK"
     ViewLinkObjectName="model.link.RestaurantUserViewLink"
