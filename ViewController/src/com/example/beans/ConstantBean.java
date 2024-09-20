@@ -14,7 +14,16 @@ public class ConstantBean {
     private String menu_restaurant_vo = "MenuItemsVO";
     private String restaurants_for_user_vo = "RestaurantForUser";
     private String restaurant_vo_name = "RestaurantsVO";
-    
+    private String users_vo_name = "UsersVO";
+
+    public void setUsers_vo_name(String users_vo_name) {
+        this.users_vo_name = users_vo_name;
+    }
+
+    public String getUsers_vo_name() {
+        return users_vo_name;
+    }
+
     public void setLogin_page_navigation(String login_page_navigation) {
         this.login_page_navigation = login_page_navigation;
     }

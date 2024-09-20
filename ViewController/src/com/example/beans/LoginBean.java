@@ -1,4 +1,7 @@
 package com.example.beans;
+
+import java.math.BigDecimal;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -19,10 +22,11 @@ import oracle.jbo.ViewObject;
 @SessionScoped
 @ManagedBean(name="loginBean")
 public class LoginBean {
+    ConstantBean constants = new ConstantBean();
+
     private String email;
     private String password;
-    private String usersVO_name = "G3UsersVO";
-    ConstantBean constants = new ConstantBean();
+    private String usersVO_name = constants.getUsers_vo_name();
     public LoginBean() {
         super();
     }
@@ -61,12 +65,12 @@ public class LoginBean {
                 if (storedPassword.equals(password)) {
                 // if (storedPassword.equals(encryptPassword(password))) {
                     String role = (String) userRow.getAttribute("Role");
-                    System.out.println(role);
                     if(role.equals("owner")) {
-                        DBSequence dbSeq = (DBSequence) userRow.getAttribute("UserId");
-                        int user_id = dbSeq.getSequenceNumber().intValue();
+                        BigDecimal userIdBD = (BigDecimal) userRow.getAttribute("UserId");
+                        // int user_id = userIdBD.intValue(); // You can also use .longValue() if it's a large number
+
                         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Owner Login Success"));
-                        usersVO.setNamedWhereClauseParam("bOwnerId", user_id);
+                        usersVO.setNamedWhereClauseParam("bOwnerId", userIdBD);
                         return constants.getOwner_navigation();
                     }
                     else if(role.equals("super_admin")){

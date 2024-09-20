@@ -12,7 +12,7 @@
     <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
     <Attr Name="_jprName" Value="../../Model.jpr"/>
     <Attr Name="_NamedConnection" Value="oracle"/>
-    <Attr Name="_appModuleNames0" Value="model.AppModule"/>
+    <Attr Name="_appModuleNames0" Value="model.services.AppModule"/>
   </DesignTime>
   <Containee
     Name="assoc"
@@ -20,14 +20,6 @@
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_AS" Value="true"/>
-    </DesignTime>
-  </Containee>
-  <Containee
-    Name="entities"
-    PackageName="model.entities"
-    ObjectType="JboPackage">
-    <DesignTime>
-      <Attr Name="_EO" Value="true"/>
     </DesignTime>
   </Containee>
   <Containee
@@ -39,8 +31,24 @@
     </DesignTime>
   </Containee>
   <Containee
-    Name="model"
-    PackageName="model"
+    Name="assoc"
+    PackageName="model.services.assoc"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entities"
+    PackageName="model.services.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="services"
+    PackageName="model.services"
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_AM" Value="true"/>
