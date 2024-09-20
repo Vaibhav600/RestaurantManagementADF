@@ -102,4 +102,14 @@
     ViewLink="model.link.MenuItemRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="RestaurantReviewVO"
+    ViewLink="model.link.RestaurantReviewViewLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="RestaurantRatingVO"
+    ViewLink="model.link.RestaurantRatingViewLink"
+    Type="oracle.jbo.Row"
+    IsUpdateable="false"/>
 </ViewObject>
