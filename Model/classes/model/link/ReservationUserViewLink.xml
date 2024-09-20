@@ -3,10 +3,9 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722879Link"
+  Name="ReservationUserViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.RatingReviewUserAssoc">
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
     Name="UsersVO"
     Cardinality="1"
@@ -21,15 +20,15 @@
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="RatingsReviewsVO"
+    Name="ReservationsVO"
     Cardinality="-1"
-    Owner="model.views.RatingsReviewsVO">
+    Owner="model.views.ReservationsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="RatingsReviewsVO"/>
+      <Attr Name="_finderName" Value="ReservationsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.RatingsReviewsVO.CustomerId"/>
+      <Item Value="model.views.ReservationsVO.CustomerId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

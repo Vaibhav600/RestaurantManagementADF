@@ -3,33 +3,32 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722865Link"
+  Name="PaymentOrderViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.FeedbackUserAssoc">
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
-    Name="UsersVO"
+    Name="OrdersVO"
     Cardinality="1"
     Source="true"
-    Owner="model.views.UsersVO">
+    Owner="model.views.OrdersVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="UsersVO"/>
+      <Attr Name="_finderName" Value="OrdersVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.UsersVO.UserId"/>
+      <Item Value="model.views.OrdersVO.OrderId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="FeedbackVO"
-    Cardinality="-1"
-    Owner="model.views.FeedbackVO">
+    Name="PaymentsVO"
+    Cardinality="1"
+    Owner="model.views.PaymentsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="FeedbackVO"/>
+      <Attr Name="_finderName" Value="PaymentsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.FeedbackVO.CustomerId"/>
+      <Item Value="model.views.PaymentsVO.OrderId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

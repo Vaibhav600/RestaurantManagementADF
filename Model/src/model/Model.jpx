@@ -31,6 +31,14 @@
     </DesignTime>
   </Containee>
   <Containee
+    Name="link"
+    PackageName="model.link"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VL" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
     Name="model"
     PackageName="model"
     ObjectType="JboPackage">
@@ -44,7 +52,6 @@
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_VO" Value="true"/>
-      <Attr Name="_VL" Value="true"/>
     </DesignTime>
   </Containee>
 </JboProject>

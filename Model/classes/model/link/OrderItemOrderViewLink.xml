@@ -3,33 +3,32 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722861Link"
+  Name="OrderItemOrderViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.OrderDeliveryAgentAssoc">
-  <ViewLinkDefEnd
-    Name="DeliveryAgentVO"
-    Cardinality="1"
-    Source="true"
-    Owner="model.views.DeliveryAgentVO">
-    <DesignTime>
-      <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="DeliveryAgentVO"/>
-    </DesignTime>
-    <AttrArray Name="Attributes">
-      <Item Value="model.views.DeliveryAgentVO.AgentId"/>
-    </AttrArray>
-  </ViewLinkDefEnd>
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
     Name="OrdersVO"
-    Cardinality="-1"
+    Cardinality="1"
+    Source="true"
     Owner="model.views.OrdersVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_finderName" Value="OrdersVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.OrdersVO.DeliveryAgentId"/>
+      <Item Value="model.views.OrdersVO.OrderId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="OrderItemsVO"
+    Cardinality="-1"
+    Owner="model.views.OrderItemsVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="OrderItemsVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.OrderItemsVO.OrderId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

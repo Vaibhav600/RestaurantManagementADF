@@ -79,27 +79,27 @@
     AliasName="TOTAL_SEATS"/>
   <ViewLinkAccessor
     Name="ReservationsVO"
-    ViewLink="model.views.SysC009722884Link"
+    ViewLink="model.link.ReservationRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="OrdersVO"
-    ViewLink="model.views.SysC009722859Link"
+    ViewLink="model.link.OrderRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="CouponsVO"
-    ViewLink="model.views.SysC009722854Link"
+    ViewLink="model.link.CouponRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="FeedbackVO"
-    ViewLink="model.views.SysC009722866Link"
+    ViewLink="model.link.FeedbackRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="MenuItemsVO"
-    ViewLink="model.views.SysC009722869Link"
+    ViewLink="model.link.MenuItemRestaurantViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

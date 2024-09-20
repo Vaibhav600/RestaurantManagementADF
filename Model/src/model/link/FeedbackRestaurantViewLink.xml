@@ -3,33 +3,32 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722851Link"
+  Name="FeedbackRestaurantViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.RestaurantUserAssoc">
-  <ViewLinkDefEnd
-    Name="UsersVO"
-    Cardinality="1"
-    Source="true"
-    Owner="model.views.UsersVO">
-    <DesignTime>
-      <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="UsersVO"/>
-    </DesignTime>
-    <AttrArray Name="Attributes">
-      <Item Value="model.views.UsersVO.UserId"/>
-    </AttrArray>
-  </ViewLinkDefEnd>
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
     Name="RestaurantsVO"
-    Cardinality="-1"
+    Cardinality="1"
+    Source="true"
     Owner="model.views.RestaurantsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_finderName" Value="RestaurantsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.RestaurantsVO.OwnerId"/>
+      <Item Value="model.views.RestaurantsVO.RestaurantId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="FeedbackVO"
+    Cardinality="-1"
+    Owner="model.views.FeedbackVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="FeedbackVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.views.FeedbackVO.RestaurantId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

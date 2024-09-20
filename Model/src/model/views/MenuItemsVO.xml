@@ -73,7 +73,7 @@
     AliasName="UPDATED_AT"/>
   <ViewLinkAccessor
     Name="OrderItemsVO"
-    ViewLink="model.views.SysC009722873Link"
-    Type="oracle.jbo.RowIterator"
+    ViewLink="model.link.OrderItemMenuItemViewLink"
+    Type="oracle.jbo.Row"
     IsUpdateable="false"/>
 </ViewObject>

@@ -61,7 +61,7 @@
     AliasName="USER_ID"/>
   <ViewLinkAccessor
     Name="OrdersVO"
-    ViewLink="model.views.SysC009722861Link"
+    ViewLink="model.link.OrderDeliveryAgentViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

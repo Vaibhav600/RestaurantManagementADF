@@ -76,32 +76,32 @@
     AliasName="UPDATED_AT"/>
   <ViewLinkAccessor
     Name="ReservationsVO"
-    ViewLink="model.views.SysC009722883Link"
+    ViewLink="model.link.ReservationUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="RestaurantsVO"
-    ViewLink="model.views.SysC009722851Link"
+    ViewLink="model.link.RestaurantUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="DeliveryAgentVO"
-    ViewLink="model.views.SysC009722889Link"
+    ViewLink="model.link.DeliveryAgentUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="OrdersVO"
-    ViewLink="model.views.SysC009722860Link"
+    ViewLink="model.link.OrderUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="RatingsReviewsVO"
-    ViewLink="model.views.SysC009722879Link"
+    ViewLink="model.link.RatingReviewUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="FeedbackVO"
-    ViewLink="model.views.SysC009722865Link"
+    ViewLink="model.link.FeedbackUserViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

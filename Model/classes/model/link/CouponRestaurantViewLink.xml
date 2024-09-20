@@ -3,33 +3,32 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722889Link"
+  Name="CouponRestaurantViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.DeliveryAgentUserAssoc">
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
-    Name="UsersVO"
+    Name="RestaurantsVO"
     Cardinality="1"
     Source="true"
-    Owner="model.views.UsersVO">
+    Owner="model.views.RestaurantsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="UsersVO"/>
+      <Attr Name="_finderName" Value="RestaurantsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.UsersVO.UserId"/>
+      <Item Value="model.views.RestaurantsVO.RestaurantId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="DeliveryAgentVO"
+    Name="CouponsVO"
     Cardinality="-1"
-    Owner="model.views.DeliveryAgentVO">
+    Owner="model.views.CouponsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="DeliveryAgentVO"/>
+      <Attr Name="_finderName" Value="CouponsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="model.views.DeliveryAgentVO.UserId"/>
+      <Item Value="model.views.CouponsVO.RestaurantId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

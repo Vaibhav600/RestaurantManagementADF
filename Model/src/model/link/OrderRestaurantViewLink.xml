@@ -3,10 +3,9 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="SysC009722859Link"
+  Name="OrderRestaurantViewLink"
   Version="12.2.1.11.57"
-  InheritPersonalization="merge"
-  EntityAssociation="model.assoc.OrderRestaurantAssoc">
+  InheritPersonalization="merge">
   <ViewLinkDefEnd
     Name="RestaurantsVO"
     Cardinality="1"

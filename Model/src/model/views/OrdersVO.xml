@@ -79,17 +79,17 @@
     AliasName="UPDATED_AT"/>
   <ViewLinkAccessor
     Name="OrderItemsVO"
-    ViewLink="model.views.SysC009722872Link"
+    ViewLink="model.link.OrderItemOrderViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="PaymentsVO"
-    ViewLink="model.views.SysC009722876Link"
+    ViewLink="model.link.PaymentOrderViewLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="RatingsReviewsVO"
-    ViewLink="model.views.SysC009722880Link"
-    Type="oracle.jbo.RowIterator"
+    ViewLink="model.link.RatingReviewOrderViewLink"
+    Type="oracle.jbo.Row"
     IsUpdateable="false"/>
 </ViewObject>
